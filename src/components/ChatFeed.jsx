@@ -62,7 +62,7 @@ const ChatFeed = (props) => {
     return (
       <div
         style={{
-          marginTop: '100%',
+          marginTop: '50%',
           marginBottom: '',
           textAlign: 'center',
           color: 'rgb(220, 150, 150)',
