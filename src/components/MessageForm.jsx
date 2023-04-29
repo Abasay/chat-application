@@ -23,15 +23,16 @@ const MessageForm = (props) => {
   }
 
   const handleUpload = (e) => {
-    sendMessage(creds, chatId, { files: e.target.value, text: '' })
+    sendMessage(creds, chatId, { files: e.target.files, text: '' })
   }
   return (
-    <form action='' className='message-form' onSubmit={handleSubmit}>
+    <form className='message-form' onSubmit={handleSubmit}>
       <input
         className='message-input'
-        placeholder='Type your message ...'
+        placeholder='Type your message...'
         value={value}
         onChange={handleChange}
+        onSubmit={handleSubmit}
       />
       <label htmlFor='upload-button'>
         <span className='image-button'>
@@ -45,7 +46,7 @@ const MessageForm = (props) => {
         style={{ display: 'none' }}
         onChange={handleUpload}
       />
-      <button type='submit' className='send-icon'>
+      <button type='submit' className='send-button'>
         <SendOutlined className='send-icon' />
       </button>
     </form>
