@@ -4,7 +4,7 @@ import ChatFeed from './components/ChatFeed'
 import './App.css'
 import LoginForm from './components/LoginForm'
 
-function App() {
+const App = () => {
   const handleLogout = () => {
     localStorage.setItem('username', '')
     localStorage.setItem('password', '')
