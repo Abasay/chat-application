@@ -69,7 +69,7 @@ const ChatFeed = (props) => {
       >
         <em>
           {' '}
-          <p>Hi there, welcome to this awesome group wbchat.</p>
+          <p>Hi there, welcome to this awesome group webchat.</p>
         </em>
         <em>
           {' '}
