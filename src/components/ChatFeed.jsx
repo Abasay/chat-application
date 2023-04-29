@@ -58,7 +58,26 @@ const ChatFeed = (props) => {
     })
   }
 
-  if (!chat) return 'Loading...'
+  if (!chat)
+    return (
+      <div
+        style={{
+          marginTop: '100%',
+          marginBottom: '',
+          textAlign: 'center',
+          color: 'rgb(220, 150, 150)',
+        }}
+      >
+        <em>
+          {' '}
+          <p>Hi there, welcome to this awesome group wbchat.</p>
+        </em>
+        <em>
+          {' '}
+          <p>Click on the add icon at the left to create a new group chat.</p>
+        </em>
+      </div>
+    )
 
   return (
     <div className='chat-feed'>
