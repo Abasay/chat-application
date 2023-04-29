@@ -129,7 +129,7 @@
 .message-image {
   margin-right: 18px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 3px;
   height: 30vw;
   /* width: 30vw; */
   max-height: 200px;
@@ -195,7 +195,7 @@
 .send-icon {
   top: 1px;
   position: relative;
-  transform: rotate(-90deg);
+  transform: rotate();
 }
 
 .picture-icon {
